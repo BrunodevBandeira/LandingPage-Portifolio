@@ -159,6 +159,8 @@ cover: O conteúdo substituído é dimensionado para manter sua proporção e pr
 
 }
 
+
+
 .banner button {
     font-family: var(--font-action);
     color: white;
@@ -410,9 +412,7 @@ cover: O conteúdo substituído é dimensionado para manter sua proporção e pr
     margin-bottom: 2rem;
 }
 
-.card-info button {
-    width: 8rem;
-    height: 2.5rem;
+.btn {
     background: #7F00FF;  
     background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
     background: linear-gradient(to left, #E100FF, #7F00FF);
@@ -422,6 +422,14 @@ cover: O conteúdo substituído é dimensionado para manter sua proporção e pr
     border-radius: .5rem;
     border: none;
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+
+}
+
+.card-info button {
+    width: 8rem;
+    height: 2.5rem;
+
+
 }
 
 .card:hover .card-info{
@@ -462,6 +470,7 @@ cover: O conteúdo substituído é dimensionado para manter sua proporção e pr
 }
 
 .sessao-contato h1 {
+
     width: 100%;
     text-align: center;
     font-family: var(--font-primary);
@@ -470,4 +479,63 @@ cover: O conteúdo substituído é dimensionado para manter sua proporção e pr
     font-weight: lighter;
 }
 
-13:33
+.sessao-contato form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field {
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secundary);
+    border-bottom: 2px dashed #636363;
+    height: 3rem;
+    outline: none; /*Tira a seleção de caixa */
+    margin: 2rem;
+}
+
+.input-group {
+    position: relative;
+    max-width: 30rem;
+    max-height: 5rem;
+}
+
+.input-group textarea{
+     max-width: 25rem;
+    max-height: 3rem;
+}
+
+.field-label {
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    font-size: 1.2rem;;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.field:focus ~ label { /*O ~ Significa a seguir, o proximo.*/
+    top:0;
+    font-size: 1rem;
+}
+
+.field:focus {
+    border-bottom: 1px solid;
+}
+
+.btn_submit {
+    text-transform: uppercase;
+}
+
+.btn-submit {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    width: 100%;
+    height: 2rem;
+    margin-top: 1rem;
+}
