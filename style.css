@@ -13,7 +13,10 @@
     --font-primary:"Baloo da 2", serif;
     --font-secundary: "Josefin Slab", serif;
     --font-action:"Muli", serif;
+}
 
+html {
+    scroll-behavior: smooth;
 }
 
 .hamburguer {
@@ -197,6 +200,7 @@ cover: O conteúdo substituído é dimensionado para manter sua proporção e pr
     top: 0;
     right: -20rem;/*Com a combinação dos dois right, da o efeito de sumiço no menu*/
     transition: all 1s;
+    z-index: 1;
 }
 
 .show-menu .sidebar {
@@ -441,7 +445,7 @@ cover: O conteúdo substituído é dimensionado para manter sua proporção e pr
 .sessao-contato {
     width: 100%;
     height: 100%;
-    background-color: #272727;
+    background: #272727;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -609,5 +613,55 @@ cover: O conteúdo substituído é dimensionado para manter sua proporção e pr
     padding: 1rem;
     cursor: pointer;
     grid-column: 2;
+}
+
+
+footer {
+    width: 100%;
+    height: 7rem;
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a {
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.social-list ul {
+    display: flex;
+}
+
+#link-topo {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    background: #7F00FF;  
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+    background: linear-gradient(to left, #E100FF, #7F00FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.6rem;
 }
 
