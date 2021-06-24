@@ -5,7 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style: none;/*Alguns navegadores não reconhece listar, portanto, temos que resetar, para não ocorrer bugs*/
     text-decoration: none;
 }
 
@@ -20,7 +20,7 @@
     width: 2rem;
     height: 2rem;
     position: fixed;
-    z-index: 100;
+    z-index: 100;/*Determina se o elemento estara mais proximo ou afastado da tela, ou seja pelo seu aprofundamento, com ele, podemos dar prioridade a algum elemento para destaque*/
     right: 2rem;
     top: 2rem;
     display: flex;
